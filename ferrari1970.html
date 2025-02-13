@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ferrari 512 S</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Max Cars</a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" id="cart-shop" onclick="toggleCart()">&#128722; <span id="cartCount">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containerCar">
+        <div class="txt">
+            <h1>Ferrari 512 S</h1>
+            <p>Um clássico dos anos 70 que marcou época nas corridas.</p>
+        </div>
+        <section class="product">
+            <img src="img/ferrari 1970.jpg" alt="Ferrari 512 S">
+            <div class="product-details">
+                <h2>Detalhes do Carro</h2>
+                <p><strong>Motor:</strong> V12 5.0L</p>
+                <p><strong>Aceleração:</strong> 0 a 100 km/h em 3.0 segundos</p>
+                <p><strong>Velocidade Máxima:</strong> 340 km/h</p>
+                <p><strong>Preço:</strong> R$ 10.000.000,00</p>
+                <button class="buy-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Max Cars. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+</html>

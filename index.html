@@ -15,6 +15,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="#" id="cart-shop" onclick="toggleCart()">
+                        &#128722; <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <div class="menu-toggle" id="menu-toggle">
@@ -43,61 +48,72 @@
     <!-- car grid -->
     <div class="car-grid">
         <div class="car-item">
-            <a href="#car1">
-                <img src="img/ft1.webp" alt="Car 1">
+            <a href="lambo.html">
+                <img src="img/lambo.webp" alt="Car 1">
                 <div class="car-name">Lamborghini</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car2">
+            <a href="porsche.html">
                 <img src="img/foto-Album-de-PORSCHE-718-A18735-66c8e42e6a5c0.jpg" alt="Car 2">
                 <div class="car-name">Porsche</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car3">
-                <img src="img/ft3.jpg" alt="Car 3">
+            <a href="bmw.html">
+                <img src="img/bmw.jpg" alt="Car 3">
                 <div class="car-name">BMW</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car4">
+            <a href="gallardo.html">
                 <img src="img/ft4.avif" alt="Car 4">
                 <div class="car-name">Gallardo</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car5">
+            <a href="ferrari.html">
                 <img src="img/1-Ferrari-296-GTB.jpg" alt="Car 5">
                 <div class="car-name">Ferrari 296</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car6">
+            <a href="mustang.html">
                 <img src="img/1970-Ford-Mustang-Fastback-a-venda-the-garage-for-sale-24-of-26.jpg" alt="Car 6">
                 <div class="car-name">Mustang 1970</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car7">
+            <a href="mercedes.html">
                 <img src="img/Mercedes-AMG-ONE_4.jpg" alt="Car 7">
                 <div class="car-name">Mercedes</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car8">
+            <a href="ferrari1970.html">
                 <img src="img/ferrari 1970.jpg" alt="Car 8">
                 <div class="car-name">Ferrari 1970</div>
             </a>
         </div>
         <div class="car-item">
-            <a href="#car9">
+            <a href="lamboavenator.html">
                 <img src="img/lamborghini-aventador-lp-780-4-ultimae.jpg" alt="Car 9">
                 <div class="car-name">Lamborghini Aventador</div>
             </a>
         </div>
     </div>
     <!-- car grid -->
+      <!-- Sidebar do Carrinho -->
+  <div class="cart-sidebar minimized" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Carrinho</h3>
+
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Os itens do carrinho serão exibidos aqui -->
+    </div>
+    <div class="cart-total" id="cartTotal"></div>
+  </div>
 
 
    

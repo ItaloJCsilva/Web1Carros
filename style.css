@@ -16,6 +16,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--black);
     color: var(--black);
+    height: 100vh;
+    margin: 10;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1 ;
 }
 
 
@@ -95,15 +104,15 @@ body {
 
 
 footer {
-    text-align: center;
-    background: #111;
+    background-color: #111;
     color: white;
-    padding: 1rem 0;
+    text-align: center;
+    padding: 10px;
 }
 
 .hero {
     height: 50vh;
-    background: url('img/ft1.webp') no-repeat center center/cover;
+    background: url('img/1-Ferrari-296-GTB.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,11 +285,7 @@ textarea {
 }
 
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
+
 
 
 .hero-image {
@@ -464,3 +469,135 @@ body {
         font-size: 0.8rem;
     }
 }
+
+/* Lambo pagina */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+.product img {
+max-width: 100%;
+width: 400px;
+border-radius: 5px;
+}
+.product-details {
+flex: 1;
+padding: 10px;
+}
+.product-details h2 {
+margin-top: 0;
+}
+.txt{
+text-align: center;
+margin-bottom: 20px;
+margin: 0;
+font-size: 2em;
+}
+.containerCar {
+max-width: 900px;
+margin: 20px auto;
+background: #b89a50;
+padding: 20px;
+
+}
+
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+    
+    
+  }
+  .cart-icon span {
+    font-size: 24px;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff4d4d;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  /* Estilos da Sidebar do Carrinho */
+  .cart-sidebar {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    padding: 20px;
+    overflow-y: auto;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  .cart-sidebar.minimized {
+    transform: translateX(100%);
+  }
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .cart-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .toggle-cart {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .cart-items {
+    margin-top: 10px;
+  }
+  .cart-item {
+    background: #e9e9e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cart-item button {
+    background: #ff4d4d;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+  }

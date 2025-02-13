@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de carros</title>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="header">
+        <a href="index.html" class="logo">Max Cars</a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                  <a href="#" id="cart-shop" onclick="toggleCart()">
+                      &#128722; <span class="cart-count" id="cartCount">0</span>
+                  </a>
+              </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- Menu -->
+
+    <!-- Conteúdo principal -->
+    <div class="containerCar">
+        <div class="txt">
+            <h1>Porsche 911 Turbo S</h1>
+            <p>Experimente a fusão entre luxo e desempenho. Um ícone atemporal da Porsche.</p>
+        </div>
+        <section class="product">
+            <img src="img/foto-Album-de-PORSCHE-718-A18735-66c8e42e6a5c0.jpg" alt="Porsche 911 Turbo S">
+            <div class="product-details">
+                <h2>Detalhes do Carro</h2>
+                <p><strong>Modelo:</strong> 911 Turbo S</p>
+                <p><strong>Motor:</strong> 3.8L Twin-Turbo Flat-6</p>
+                <p><strong>Aceleração:</strong> 0 a 100 km/h em 2.7 segundos</p>
+                <p><strong>Velocidade Máxima:</strong> 330 km/h</p>
+                <p><strong>Preço:</strong> R$ 1.800.000,00</p>
+                <p>
+                    O Porsche 911 Turbo S combina elegância e potência, proporcionando uma experiência de direção incomparável. 
+                    Tecnologia avançada e design icônico definem este superesportivo alemão.
+                </p>
+                <button class="buy-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sidebar do Carrinho -->
+    <div class="cart-sidebar minimized" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Carrinho</h3>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Os itens do carrinho serão exibidos aqui -->
+        </div>
+        <div class="cart-total" id="cartTotal"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Max Cars. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<script src="script.js" defer></script>
+</html>

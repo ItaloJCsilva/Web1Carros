@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ford Mustang GT</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Max Cars</a>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" id="cart-shop" onclick="toggleCart()">&#128722; <span id="cartCount">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="containerCar">
+        <div class="txt">
+            <h1>Ford Mustang GT</h1>
+            <p>O muscle car americano mais icônico.</p>
+        </div>
+        <section class="product">
+            <img src="img/1970-Ford-Mustang-Fastback-a-venda-the-garage-for-sale-24-of-26.jpg" alt="Ford Mustang GT">
+            <div class="product-details">
+                <h2>Detalhes do Carro</h2>
+                <p><strong>Motor:</strong> V8 5.0L</p>
+                <p><strong>Aceleração:</strong> 0 a 100 km/h em 4.3 segundos</p>
+                <p><strong>Velocidade Máxima:</strong> 250 km/h</p>
+                <p><strong>Preço:</strong> R$ 550.000,00</p>
+                <button class="buy-button" onclick="addToCart()">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Max Cars. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+</html>

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+
     <title>Document</title>
 </head>
 <body>
@@ -25,20 +27,21 @@
     </header>
     <div class="container">
         <div class="formbox">
-            <h2>Envie uma mensagem </h2>
-            <form action="" method="get">
-                <input type="text" name="" placeholder="Nome">
-                <input type="text" name="" placeholder="Email">
-                <input type="text" name="" placeholder="Assunto">
-                <textarea name="" placeholder="Digite sua mensagem"></textarea>
-                <button type="submit">Enviar mensagem</button>
-
-            </form>
+          <h2>Envie uma mensagem</h2>
+          <form id="contactForm" action="" method="get">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="assunto" placeholder="Assunto">
+            <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+            <button type="submit">Enviar mensagem</button>
+          </form>
         </div>
     </div>
+      
     <footer>
         <p>&copy; 2024 Max Cars. Todos os direitos reservados.</p>
     </footer>
     
 </body>
+<script src="script.js" defer></script>
 </html>
